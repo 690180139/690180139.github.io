@@ -1,2 +1,2 @@
-# 690180139.github.io
-画廊
+# 画廊
+[访问地址]("http://wangluxuan.top")
