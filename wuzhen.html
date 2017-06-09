@@ -15,6 +15,7 @@
         <script type="text/javascript" src="js/templatemo-script.js"></script>
         <script src="js/echarts.min.js"></script>
         <script src="js/world.js"></script>
+
     </head>
     <body style="height:100%">
         <!-- Header -->
@@ -46,138 +47,72 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-uppercase" style="color:#b9cda4">Gallery Collection</h2>
+                        <h2 class="text-uppercase" style="color:#b9cda4">乌镇</h2>
                         <hr class="templatemo-section-header-hr">
-                        <p class="text-uppercase templatemo-section-subheader">View All Photos</p>
+                        <p class="text-uppercase templatemo-section-subheader">2017-04</p>
                     </div>
                 </div>
                 <div class="row">
                     <!-- Left block, images -->
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                         <div class="row">
-                          <a href="hangzhou.html" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                          <a href="img/wuzhen1.jpg" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                               <div class="product-type-container">
                                   <div class="product-type-overlay">
                                       <div class="product-type-info">
                                           <i class="fa fa-search fa-2x gold-text"></i>
-                                          <h3 class="gold-text text-uppercase">杭州</h3>
-                                          <p class="text-uppercase white-text">2017-04</p>
+                                          <h3 class="gold-text text-uppercase">颜色-1</h3>
                                       </div>
                                   </div>
-                                  <img src="img/hangzhou10_min.jpg" alt="Product Type 1" class="product-type-img img-responsive">
+                                  <img src="img/wuzhen1_min.jpg" alt="Product Type 1" class="product-type-img img-responsive">
                               </div>
                           </a>
-                          <a  href="wuzhen.html" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                          <a href="img/wuzhen2.jpg" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                               <div class="product-type-container">
                                   <div class="product-type-overlay">
                                       <div class="product-type-info">
                                           <i class="fa fa-search fa-2x gold-text"></i>
-                                          <h3 class="gold-text text-uppercase">乌镇</h3>
-                                          <p class="text-uppercase white-text">2017-04</p>
+                                          <h3 class="gold-text text-uppercase">颜色-2</h3>
                                       </div>
                                   </div>
                                   <img src="img/wuzhen2_min.jpg" alt="Product Type 1" class="product-type-img img-responsive">
                               </div>
                           </a>
-                          <a href="0402.html" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                          <a href="img/wuzhen3.jpg" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                               <div class="product-type-container">
                                   <div class="product-type-overlay">
                                       <div class="product-type-info">
                                           <i class="fa fa-search fa-2x gold-text"></i>
-                                          <h3 class="gold-text text-uppercase">0402</h3>
-                                          <p class="text-uppercase white-text">2016-04</p>
+                                          <h3 class="gold-text text-uppercase">你</h3>
                                       </div>
                                   </div>
-                                  <img src="img/0402-2_min.jpg" alt="Product Type 1" class="product-type-img img-responsive">
+                                  <img src="img/wuzhen3_min.jpg" alt="Product Type 1" class="product-type-img img-responsive">
                               </div>
                           </a>
                         </div>
                     </div>
-
+                </div>
+                <div class="row">
+                    <!-- Left block, images -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <div class="row">
+                          <a href="img/wuzhen4.jpg" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                              <div class="product-type-container">
+                                  <div class="product-type-overlay">
+                                      <div class="product-type-info">
+                                          <i class="fa fa-search fa-2x gold-text"></i>
+                                          <h3 class="gold-text text-uppercase">你</h3>
+                                      </div>
+                                  </div>
+                                  <img src="img/wuzhen4_min.jpg" alt="Product Type 1" class="product-type-img img-responsive">
+                              </div>
+                          </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section> <!-- end Product Type -->
 
-        <div id="main" style="width: 100%;height:400px;z-index:10;"></div>
-        <script type="text/javascript">
-
-            var chart = echarts.init(document.getElementById('main'));
-            var myData = [
-              {name: '北京', value: [116.4071,39.9046, '日期: 2017-05-02'], url:'http://www.baidu.com'},
-              {name: '上海', value: [121.4737,31.2304, '日期: 2017-04'],url:'http://www.baidu.com'},
-              {name: '杭州', value: [120.1551,30.2741, '日期: 2017-04'],url:'hangzhou.html'},
-              {name: '乌镇', value: [120.4862,30.7491, '日期: 2017-04'],url:'wuzhen.html'},
-              {name: '纽约', value: [-74, 40.7167, '日期: 2017-05-02'],url:'http://www.baidu.com'},
-              {name: '成都', value: [104.0647,30.5702, '日期: 2017-05-02'],url:'http://www.baidu.com'}
-            ]
-
-            option = {
-                backgroundColor: '#EFEFEF',
-                tooltip : {
-                   trigger: 'item'
-                },
-                series: [
-                     {
-                         name: '',
-                         type: 'effectScatter',
-                         zlevel: 2,
-
-                         label: {
-                             normal: {
-                                 show: true,
-                                 position: 'right',
-                                 formatter: '{b}'
-                             }
-                         },
-                         rippleEffect: {
-                             brushType: 'stroke'
-                         },
-                         itemStyle: {
-                             normal: {
-                                 color: '#435242'
-                             }
-                         },
-                         coordinateSystem: 'geo',
-                         data: myData
-                     }
-                 ],
-                title : {
-                    text: '',
-                    left: 'center',
-                    textStyle : {
-                        color: '#fff'
-                    }
-                },
-                geo: {
-                    map: 'world',
-                    roam: true,
-                    label: {
-                         emphasis: {
-                             show: false
-                         }
-                     },
-                    itemStyle: {
-                        normal: {
-                            areaColor: '#CDCDCD',
-                            borderColor: '#CDCDCD'
-                        },
-                        emphasis: {
-                            areaColor: '#b9cda4'
-                        }
-                    }
-                }
-            };
-              chart.setOption(option);
-              chart.on('click', function (params) {
-                  var name = params.name;
-                  for(var i=0;i<myData.length;i++){
-                    if(name==myData[i].name){
-                      location.href=myData[i].url;
-                    }
-                  }
-
-              });
-        </script>
         <footer class="text-center" style="background:#b9cda4;padding:10px">
             <p class="text-uppercase" style="margin:10px">
               © 2017 Powered with<i class="fa fa-heart" style="margin-left:5px; margin-right:5px;"></i>by Luxuan Wang and Jiateng Liang
