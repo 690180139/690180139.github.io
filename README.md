@@ -1,2 +1,2 @@
 # 画廊
-[访问地址]("http://wangluxuan.top")
+[访问地址](http://wangluxuan.top)
